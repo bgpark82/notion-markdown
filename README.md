@@ -1,5 +1,6 @@
 # Notion-Markdown
 
+- 티스토리 오픈 API : https://www.tistory.com/guide/api/manage/register
 - Netlify: https://docs.netlify.com/cli/get-started/
 - Netlify Serverless: https://www.netlify.com/blog/intro-to-serverless-functions/
 

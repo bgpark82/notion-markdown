@@ -1,5 +1,8 @@
 # Notion-Markdown
 
+- Netlify: https://docs.netlify.com/cli/get-started/
+- Netlify Serverless: https://www.netlify.com/blog/intro-to-serverless-functions/
+
 ### Netlify React
 1. 리엑트 프로젝트 생성
 2. 깃헙 연동

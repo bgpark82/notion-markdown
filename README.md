@@ -15,3 +15,13 @@ netlify build
 netlify deploy
 netlify deploy --prod
 ```
+
+## 참고
+1. 캐시 유용하게 사용하기 : https://toss.tech/article/smart-web-service-cache
+
+
+## 이슈
+### serverless
+운영에 serverless 코드를 넣고 사용한다
+
+

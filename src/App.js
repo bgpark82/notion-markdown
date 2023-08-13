@@ -7,7 +7,7 @@ function App() {
 
     const [message, setMessage] = useState('')
     const [appId, setAppId] = useState('')
-    const [cookies, setCookie, removeCookie] = useCookies(['myCookie'])
+    const [cookies, setCookie, removeCookie] = useCookies(['tistory_token'])
     useEffect(() => {
         console.log(cookies)
         console.log(cookies.myCookie)
@@ -15,10 +15,9 @@ function App() {
         console.log(document.cookie)
     })
 
-
     const handleTistoryAuth = async () => {
-        // auth.js는 netlify/functions에 생성했지만 컴파일(?)된 상태에서는 .netlify/functions/auth가 실행된다
-        const redirectUrl = 'http://localhost:8888/.netlify/functions/authentication'
+        const redirectUrl = 'https://notion-markdown.netlify.app/.netlify/functions/auth'
+        // const redirectUrl = 'https://localhost:8888/.netlify/functions/auth'
         window.open(`https://www.tistory.com/oauth/authorize?
             client_id=${appId}&
             redirect_uri=${redirectUrl}&

@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
         statusCode: 200,
         body: code,
         headers: {
-            'Set-Cookie': `tistory_token=${code}; Max-Age=31536000; Path=/`,
+            'Set-Cookie': `tistory_token=${code}; Max-Age=31536000; SameSite=None; Secure`,
             'Content-Type': 'text/plain'
         },
         // serverless function이 다른 도메인에 존재하므로 localhost에서는 cookie를 볼 수 없다
